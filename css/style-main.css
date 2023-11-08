@@ -109,7 +109,7 @@ header {
 
 main {
     border: .1rem solid black;
-    background: #1F3051;
+    background: linear-gradient(90deg, rgba(26,41,58,1) 0%, rgba(32,62,90,1) 19%);
 }
 
 footer {
@@ -121,7 +121,14 @@ footer {
     
 
 }
-
+.info {
+    width: 95rem;   
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:1rem
+}
 .logos {
     border-top: .2rem solid #363C44;
     padding-top: 1rem;
@@ -148,5 +155,6 @@ footer {
 
 .desc {
     border-bottom: .2rem solid #363C44;
-
+    padding-bottom: 1rem;
+    
 }
