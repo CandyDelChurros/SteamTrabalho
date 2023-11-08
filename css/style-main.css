@@ -32,18 +32,15 @@ body {
     'footer';
     grid-template-rows: 13rem 1fr 13rem;
 }
-
 header {
     width: 100vw;
     height: 13rem;
     display: flex;
-    border: .1rem solid black;
     align-items: center;
     background: #171D25;
     color: #fff;
     gap: 4rem;
 }
-
 .menu {
     width: 85rem;
     display: flex;
@@ -52,15 +49,12 @@ header {
     gap: 3rem;
     align-items: center;
 }
-
-
 .logo {
     background: url(../img/logo_steam.svg);
     background-size: cover;
     height: 5rem;
     width: 16.5rem;
 }
-
 .abas {
     display: flex;
     width: 43rem;
@@ -81,12 +75,6 @@ header {
     align-content: center;
     font-size: 2rem;
 }
-
-
-
-
-
-
 .menu-2 {
     margin-top: 1rem;
     display: flex;
@@ -108,7 +96,6 @@ header {
 }
 
 main {
-    border: .1rem solid black;
     background: linear-gradient(90deg, rgba(26,41,58,1) 0%, rgba(32,62,90,1) 19%);
 }
 
@@ -156,5 +143,4 @@ footer {
 .desc {
     border-bottom: .2rem solid #363C44;
     padding-bottom: 1rem;
-    
 }
