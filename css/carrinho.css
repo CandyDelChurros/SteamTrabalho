@@ -1,0 +1,250 @@
+.main {
+  justify-content: center;
+  display: grid;
+  grid-template-areas: "main1 main1" "main2 main3";
+}
+.main h2, .main a, .main span, .main h3, .main button {
+  text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+.main .main1 {
+  grid-area: main1;
+  width: 100rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.main .main1 .menu {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+.main .main1 .menu .carrinho {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.main .main1 .menu .carrinho .carrinho-botao {
+  height: 100%;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #6C9018;
+  border-radius: 0.3rem;
+  color: #fff;
+  box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+}
+.main .main1 .menu .carrinho .carrinho-botao:hover {
+  background-color: #9AC407;
+}
+.main .main1 .menu .ul-menu {
+  width: 100rem;
+  height: 4.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #3178B3 0%, #1A387C 70%);
+}
+.main .main1 .menu .ul-menu .li-menu {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.main .main1 .menu .ul-menu .li-menu a {
+  color: #fff;
+}
+.main .main1 .menu .ul-menu .li-menu:hover {
+  background: linear-gradient(90deg, #3178B3 0%, #1A387C 100%);
+}
+.main .main1 .menu .ul-menu .buscar::-moz-placeholder {
+  color: #171D25;
+}
+.main .main1 .menu .ul-menu .buscar::placeholder {
+  color: #171D25;
+}
+.main .main1 .menu .ul-menu .buscar {
+  margin-left: 3rem;
+  width: 16rem;
+  height: 75%;
+  border-radius: 0.3rem;
+  padding-left: 2rem;
+  background-color: #316282;
+  color: #171D25;
+}
+.main .main1 .menu .ul-menu i {
+  color: #171D25;
+  position: relative;
+  right: 2.5rem;
+}
+.main .main1 .todos-os-produtos, .main .main1 span {
+  color: #A4B0BD;
+}
+.main .main1 .todos-os-produtos:hover {
+  color: #fff;
+}
+.main .main1 h2 {
+  color: #fff;
+  margin-top: 1rem;
+}
+.main .main2 {
+  grid-area: main2;
+  width: 67rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+.main .main2 .main2-1 {
+  width: 100%;
+  height: 8rem;
+  background-color: #16202D;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.main .main2 .main2-1 .jogo {
+  display: flex;
+  align-items: center;
+}
+.main .main2 .main2-1 .jogo img {
+  width: 15rem;
+  height: 5rem;
+}
+.main .main2 .main2-1 .jogo a {
+  color: #fff;
+  margin-left: 2rem;
+}
+.main .main2 .main2-1 .preco {
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+.main .main2 .main2-1 .preco a {
+  color: #A4B0BD;
+  text-decoration: underline;
+}
+.main .main2 .main2-2 {
+  width: 100%;
+  height: 20rem;
+  background-color: #16202D;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main .main2 .main2-2 span {
+  color: #fff;
+}
+.main .main2 .main2-2 .descricao-presente {
+  color: #A4B0BD;
+}
+.main .main2 .main2-2 .total-e-preco {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main2 .main2-2 .botoes-compra {
+  display: flex;
+  justify-content: flex-end;
+}
+.main .main2 .main2-2 .botoes-compra button {
+  width: 25rem;
+  height: 4rem;
+  background-color: #6C9018;
+  border-radius: 0.3rem;
+  color: #fff;
+  margin-left: 3rem;
+  box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+.main .main2 .main2-2 .botoes-compra button:hover {
+  background-color: #9AC407;
+}
+.main .main2 .main2-3 {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main .main2 .main2-3 sup, .main .main2 .main2-3 span {
+  color: #fff;
+}
+.main .main2 .main2-3 sup {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.main .main2 .main2-3 button {
+  width: 25rem;
+  height: 4rem;
+  background-color: #2B475E;
+  border-radius: 0.3rem;
+  color: #67c1f5;
+  box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+.main .main2 .main2-3 .continuar-e-remover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main2 .main2-3 button:hover {
+  background-color: #437EA0;
+  color: #fff;
+}
+.main .main2 .main2-3 a {
+  color: #A4B0BD;
+  text-decoration: underline;
+}
+.main .main2 .main2-4 {
+  width: 100%;
+  height: 16rem;
+  background-color: #16202D;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.main .main2 .main2-4 img {
+  width: 14rem;
+  height: 8rem;
+  margin-right: 2rem;
+}
+.main .main2 .main2-4 .textos-main2-4 {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main .main2 .main2-4 .textos-main2-4 h3, .main .main2 .main2-4 .textos-main2-4 span {
+  color: #A4B0BD;
+}
+.main .entrega {
+  color: #fff;
+  margin: 2rem;
+}
+.main .main3 {
+  grid-area: main3;
+  width: 30rem;
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+}
+.main .main3 img {
+  width: 30rem;
+  margin-bottom: 3rem;
+  box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+}/*# sourceMappingURL=carrinho.css.map */
