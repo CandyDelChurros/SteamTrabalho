@@ -26,10 +26,6 @@ body {
     width: 100vw;
     height: 100vh; 
     display: grid;
-    grid-area: 
-    'header'
-    'main'
-    'footer';
     grid-template-rows: 13rem 1fr 13rem;
 }
 header {
@@ -97,6 +93,58 @@ header {
 
 main {
     background: linear-gradient(90deg, rgba(26,41,58,1) 0%, rgba(32,62,90,1) 19%);
+    display: grid;
+    grid-template-areas: 
+    "aside nav"
+    "aside destaque"
+    "recomenda recomenda"
+    "main-cont main-cont";  
+    grid-template-columns: 25rem 10fr;
+    grid-template-rows: 5rem 34rem 25rem 10rem;
+}
+
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: aside;
+    border: .1rem solid black;
+}
+
+
+.vale {
+    color: #88bde9;
+    display: flex;
+    border: .1rem solid black;
+    flex-direction: column;
+    width: 25rem;
+    height: 12rem;
+    gap: .5rem;
+}
+.presente {
+    background: url(../img/steamcards.png);
+    width: 10rem;
+    height: 6rem;
+    background-size: cover;
+}
+.vale h4{
+    font-size: 1.3rem;
+}
+.vale span{
+    font-size: 1.3rem;
+    color: #a4b3c4;
+    font-weight: bold;
+}
+
+
+destaque{
+    grid-area: destaque;
+}
+recomenda{
+    grid-area: recomenda;
+}
+main-cont{
+    grid-area: main-cont;
 }
 
 footer {
