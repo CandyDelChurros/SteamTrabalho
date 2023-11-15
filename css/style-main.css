@@ -99,19 +99,64 @@ main {
     "aside destaque"
     "recomenda recomenda"
     "main-cont main-cont";  
-    grid-template-columns: 25rem 10fr;
-    grid-template-rows: 5rem 1fr 25rem 10rem;
+    grid-template-columns: 30rem 83rem;
+    grid-template-rows: 5.5rem 1fr 1fr 10rem;
 }
 
 nav{
     grid-area: nav;
+    border: .1rem solid black;
+    display:flex;
+    gap:.1rem;
+    flex-direction: column;
+    align-items: end;
 }
+nav button{
+    width: 12rem;
+    border-radius: .3rem;
+}
+.nav {
+    border: .1rem solid black;
+    width: 75rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.nav ul li{
+    color: #fff;
+    width: 8rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+}
+.nav ul li:nth-child(2){
+    width: 16rem;
+}
+.nav ul li:nth-child(4){
+    width: 10rem;
+}
+.nav ul li:hover{
+    height: 3rem;
+    background-color: #fff;
+}
+
+
 aside{
     grid-area: aside;
     height: 60rem;
     border: .1rem solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 .vale {
     display: flex;
@@ -119,7 +164,6 @@ aside{
     width: 25rem;
     height: 12rem;
     gap: .5rem;
-    margin-left: 1.5rem;
 
 }
 .presente {
@@ -146,7 +190,6 @@ aside{
     display: flex;
     flex-direction: column;
     gap: .2rem;
-    margin-left: 1.5rem;
 }
 .recomendados, .categorias, .genero, h4{
     font-size: 1.5rem;
