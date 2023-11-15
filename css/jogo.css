@@ -3,9 +3,6 @@
   display: grid;
   grid-template-areas: "main1 main1" "main2 main3";
 }
-.main div {
-  border: 1px solid white;
-}
 .main h2, .main a, .main span, .main h3, .main button {
   text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.6);
 }
@@ -137,6 +134,41 @@
   display: flex;
   flex-direction: column;
   margin-right: 3rem;
+  color: #fff;
+}
+.main .main2 .adicionar-jogo {
+  height: 8rem;
+  background: linear-gradient(90deg, #32414F 0%, #566473 70%);
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main2 .preco-e-botao {
+  width: 28rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 0.3rem;
+  position: relative;
+  bottom: 2rem;
+  left: 35rem;
+}
+.main .main2 .preco-e-botao button {
+  width: 15rem;
+  height: 3rem;
+  background-color: #6C9018;
+  border-radius: 0.3rem;
+  color: #fff;
+  margin-left: 3rem;
+  box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
 }
 .main .main3 {
   grid-area: main3;

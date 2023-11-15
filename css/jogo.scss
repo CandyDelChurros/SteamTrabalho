@@ -8,9 +8,9 @@
     'main1 main1'
     'main2 main3';
 
-    div {
-        border: 1px solid white;
-    }
+    // div {
+    //     border: 1px solid white;
+    // }
 
     h2, a, span, h3, button{
         text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.6);
@@ -167,6 +167,44 @@
         display: flex;
         flex-direction: column;
         margin-right: 3rem;
+        color: $cor-texto1;
+
+        .adicionar-jogo{
+            height: 8rem;
+            background: linear-gradient(90deg, #32414F 0%, #566473 70%);
+            border-radius: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preco-e-botao{
+            width: 28rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border-radius: 0.3rem;
+            position: relative;
+            bottom:2rem;
+            left: 35rem;
+
+            button{
+                width: 15rem;
+                height: 3rem;
+                background-color: $cor-botoes-verde;
+                border-radius: 0.3rem;
+                color: $cor-texto1;
+                margin-left: 3rem;
+                box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                transition: 0.5s;
+            }
+        }
     }
 
     .main3{
