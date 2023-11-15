@@ -100,7 +100,7 @@ main {
     "recomenda recomenda"
     "main-cont main-cont";  
     grid-template-columns: 25rem 10fr;
-    grid-template-rows: 5rem 34rem 25rem 10rem;
+    grid-template-rows: 5rem 1fr 25rem 10rem;
 }
 
 nav{
@@ -108,18 +108,19 @@ nav{
 }
 aside{
     grid-area: aside;
+    height: 60rem;
     border: .1rem solid black;
 }
 
 
 .vale {
-    color: #88bde9;
     display: flex;
-    border: .1rem solid black;
     flex-direction: column;
     width: 25rem;
     height: 12rem;
     gap: .5rem;
+    margin-left: 1.5rem;
+
 }
 .presente {
     background: url(../img/steamcards.png);
@@ -128,7 +129,9 @@ aside{
     background-size: cover;
 }
 .vale h4{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    color: #88bde9;
+
 }
 .vale span{
     font-size: 1.3rem;
@@ -136,7 +139,27 @@ aside{
     font-weight: bold;
 }
 
-
+.recomendados, .categorias, .genero {
+    width: 25rem;
+    height: 10rem;
+    color: #a4b3c4;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-left: 1.5rem;
+}
+.recomendados, .categorias, .genero, h4{
+    font-size: 1.5rem;
+    color: #536F86;
+}
+.recomendados, .categorias, .genero span{
+    font-size: 1.5rem;
+    color: #7A8B9D;
+    font-weight: bold;
+}
+.categorias {
+    height: 15.3rem;
+}
 destaque{
     grid-area: destaque;
 }
