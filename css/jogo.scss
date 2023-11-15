@@ -204,6 +204,27 @@
                 -moz-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
                 transition: 0.5s;
             }
+
+            button:hover{
+                background-color: $cor-botoes-verde-hover;
+            }
+
+        }
+
+        .sobre-o-jogo{
+            margin-top: 3rem;
+
+            h3{
+                color: $cor-texto1;
+                border-bottom: 1px solid #3178B3;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                color: $cor-texto2;
+                margin-bottom: 2rem;
+            }
         }
     }
 
@@ -213,5 +234,57 @@
         height: 100rem;
         display: flex;
         flex-direction: column;
+
+        .quantidade-jogador{
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+            margin-bottom: 3rem;
+
+            a{
+                width: 25rem;
+                padding: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #213748;
+                border-radius: 0.3rem;
+                color: $cor-texto1;
+
+                i{
+                    margin-right: 2rem;
+                }
+            }
+
+            a:hover{
+                background-color: #59A8D5;
+            }
+
+        }
+
+        .classificacao{
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+
+            .classificacao1{
+                padding: 2rem;
+                display: flex;
+
+                img{
+                    margin-right: 1rem;
+                }
+            }
+
+            .classificacao2{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
     }
 }

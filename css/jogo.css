@@ -170,10 +170,69 @@
   -moz-box-shadow: -2px 1px 16px 0px rgba(0, 0, 0, 0.75);
   transition: 0.5s;
 }
+.main .main2 .preco-e-botao button:hover {
+  background-color: #9AC407;
+}
+.main .main2 .sobre-o-jogo {
+  margin-top: 3rem;
+}
+.main .main2 .sobre-o-jogo h3 {
+  color: #fff;
+  border-bottom: 1px solid #3178B3;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+.main .main2 .sobre-o-jogo p {
+  color: #A4B0BD;
+  margin-bottom: 2rem;
+}
 .main .main3 {
   grid-area: main3;
   width: 30rem;
   height: 100rem;
   display: flex;
   flex-direction: column;
+}
+.main .main3 .quantidade-jogador {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16202D;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.main .main3 .quantidade-jogador a {
+  width: 25rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #213748;
+  border-radius: 0.3rem;
+  color: #fff;
+}
+.main .main3 .quantidade-jogador a i {
+  margin-right: 2rem;
+}
+.main .main3 .quantidade-jogador a:hover {
+  background-color: #59A8D5;
+}
+.main .main3 .classificacao {
+  background-color: #16202D;
+  color: #fff;
+}
+.main .main3 .classificacao .classificacao1 {
+  padding: 2rem;
+  display: flex;
+}
+.main .main3 .classificacao .classificacao1 img {
+  margin-right: 1rem;
+}
+.main .main3 .classificacao .classificacao2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=jogo.css.map */
