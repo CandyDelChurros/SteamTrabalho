@@ -105,7 +105,6 @@ main {
 
 nav{
     grid-area: nav;
-    border: .1rem solid black;
     display:flex;
     gap:.1rem;
     flex-direction: column;
@@ -152,7 +151,6 @@ nav button{
 aside{
     grid-area: aside;
     height: 60rem;
-    border: .1rem solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,6 +204,101 @@ aside{
 destaque{
     grid-area: destaque;
 }
+
+.slider{
+    margin: 0 auto;
+    width: 80rem;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 40rem;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 45rem;
+}
+
+.manual-navigation {
+    position: relative;
+    width: 80rem;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: .2rem solid #fff;
+    padding: .5rem;
+    border-radius:1rem;
+    cursor:pointer;
+    transition: .05s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 4rem;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: -10%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -60%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+.navigation-auto div{
+    border: .2rem solid blue;
+    padding: .5rem;
+    border-radius:1rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 80rem;
+    margin-top: 36rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 4rem;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
 recomenda{
     grid-area: recomenda;
 }
