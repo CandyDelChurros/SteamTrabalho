@@ -75,7 +75,7 @@
                 }
 
                 .li-menu:hover{
-                    background: linear-gradient(90deg, #3178B3 0%, #1A387C 100%);
+                    background: linear-gradient(90deg, #3178B3 0%, #1A387C 70%);
                 }
 
                 .buscar::placeholder{
@@ -140,8 +140,9 @@
                     margin-bottom: 1.5rem;
                 }
 
-                span{
+                p{
                     color: $cor-texto-descricao;
+                    margin-right: 1rem;
                 }
 
                 ul{
@@ -162,7 +163,7 @@
 
     .main2{
         grid-area: main2;
-        height: 100rem;
+        height: 115rem;
         width: 67rem;
         display: flex;
         flex-direction: column;
@@ -225,6 +226,11 @@
                 color: $cor-texto2;
                 margin-bottom: 2rem;
             }
+
+            img{
+                width: 100%;
+                margin-bottom: 2rem;
+            }
         }
     }
 
@@ -235,7 +241,7 @@
         display: flex;
         flex-direction: column;
 
-        .quantidade-jogador{
+        .quantidade-jogador-fnaf{
             height: 10rem;
             display: flex;
             justify-content: center;
@@ -254,15 +260,91 @@
                 align-items: center;
                 background-color: #213748;
                 border-radius: 0.3rem;
-                color: $cor-texto1;
+                color: $cor-texto3;
 
                 i{
                     margin-right: 2rem;
+                    color: $cor-texto1;
                 }
             }
 
             a:hover{
                 background-color: #59A8D5;
+                color: $cor-texto1;
+            }
+
+        }
+
+        .quantidade-jogador-st6{
+            height: 22rem;
+            display: flex;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+            margin-bottom: 3rem;
+
+            a{
+                width: 28rem;
+                padding: 1rem;
+                padding-left: 2rem;
+                // padding-right: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #213748;
+                border-radius: 0.3rem;
+                color: $cor-texto3;
+
+                i{
+                    margin-right: 2rem;
+                    color: $cor-texto1;
+                }
+            }
+
+            a:hover{
+                background-color: #59A8D5;
+                color: $cor-texto1;
+            }
+
+        }
+
+        .quantidade-jogador-bg3{
+            height: 17rem;
+            display: flex;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+            margin-bottom: 3rem;
+
+            a{
+                width: 28rem;
+                padding: 1rem;
+                padding-left: 2rem;
+                // padding-right: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #213748;
+                border-radius: 0.3rem;
+                color: $cor-texto3;
+
+                i{
+                    margin-right: 2rem;
+                    color: $cor-texto1;
+                }
+            }
+
+            a:hover{
+                background-color: #59A8D5;
+                color: $cor-texto1;
             }
 
         }
