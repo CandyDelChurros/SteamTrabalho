@@ -289,7 +289,7 @@
     .main3{
         grid-area: main3;
         width: 30rem;
-        height: 100rem;
+        height: 140rem;
         display: flex;
         flex-direction: column;
         
@@ -300,6 +300,10 @@
             box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
             -webkit-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+        }
+
+        .jogo:hover{
+            width: 31rem;
         }
     }
 }
