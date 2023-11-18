@@ -383,7 +383,40 @@ recomenda .ofertas .oferta .ofer2:nth-child(4) .img{
     background: url(../img/main/sf6\ promo.jpg);
     background-size: cover;
 }
+recomenda .categoria{
+    border: .1rem solid black;
+    height: 20rem;
+    margin-left: 8rem;
+}
 
+recomenda .categoria .cat{
+    display:flex;
+    border: .1rem solid black;
+    height: 15rem;
+}
+
+recomenda .categoria .cat .box-cat{
+    border: .1rem solid black;
+    height:15rem;
+    width:15rem
+}
+
+recomenda .navegar {
+    border: .1rem solid black;
+    margin-left:8rem;
+    height: 8rem;
+}
+
+recomenda .navegar .nav-container{
+    border: .1rem solid black;
+    display: flex;
+    height: 15rem;
+}
+recomenda .navegar .nav-container .nav-box{
+    border: .1rem solid black;
+    height: 5rem;
+    width: 17rem;
+}
 
 main-cont{
     grid-area: main-cont;
