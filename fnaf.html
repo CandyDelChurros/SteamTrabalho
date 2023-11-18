@@ -36,7 +36,7 @@
             <div class="main1">
                 <div class="menu">
                     <div class="carrinho">
-                        <a href="carrinho.html"><button class="carrinho-botao">Carrinho (1)</button></a>
+                        <a href="carrinho.html" id="link-carrinho"><button class="carrinho-botao">Carrinho (1)</button></a>
                     </div>
                     <ul class="ul-menu">
                         <li class="li-menu"><a href="">Sua Loja</a></li>
@@ -49,7 +49,7 @@
                     </ul>
                 </div>
                 <a href="" class="todos-os-produtos">Todos os jogos </a><span>> Five Nights at Freddy's</span>
-                <h2>Five Nights at Freddy's</h2>
+                <h2 class="nome-jogo-e-central">Five Nights at Freddy's <button>Central da comunidade</button></h2>
                 <div class="trailer-e-descricao">
                     <div class="trailer">
                         <iframe width="630" height="354.375" src="https://www.youtube.com/embed/RP4UTOek0-Y?si=h1hhNTYPoyUXHH0X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="preco-e-botao">
                     <h3>R$ 10,89</h3>
-                    <button>+ Carrinho</button>
+                    <button onclick="adicionarAoCarrinho()">+ Carrinho</button>
                 </div>
                 <div class="sobre-o-jogo">
                     <h3>Sobre este jogo</h3>
@@ -163,5 +163,8 @@
             </div>
         </footer>
     </div>
+
+    <script href="/js/script.js"></script>
+
 </body>
 </html>
