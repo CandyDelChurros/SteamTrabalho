@@ -97,10 +97,10 @@ main {
     grid-template-areas: 
     "aside nav"
     "aside destaque"
-    "recomenda recomenda"
-    "main-cont main-cont";  
+    "aside recomenda"
+    "aside main-cont";  
     grid-template-columns: 30rem 83rem;
-    grid-template-rows: 5.5rem 1fr 1fr 10rem;
+    grid-template-rows: 8.5rem 43rem 1fr 10rem;
 }
 
 nav{
@@ -204,18 +204,24 @@ aside{
 destaque{
     grid-area: destaque;
 }
-
+destaque span{
+    margin-left:8rem;
+    color: #fff;
+}
 .slider{
-    margin: 0 auto;
-    width: 80rem;
+    margin-left:8rem;
+    margin-top:1rem;
+    width: 74.5rem;
     height: 40rem;
     overflow: hidden;
+
 }
 
 .slides{
-    width: 400%;
+    width: 300%;
     height: 40rem;
     display: flex;
+
 }
 
 .slides input {
@@ -223,19 +229,19 @@ destaque{
 }
 
 .slide {
-    width: 25%;
     position: relative;
     transition: 2s;
+    
 }
 
 .slide img {
-    width: 45rem;
+    width: 75rem;
 }
 
 .manual-navigation {
     position: relative;
     width: 80rem;
-    margin-top: -4rem;
+    margin-top: -2rem;
     display: flex;
     justify-content: center;
 }
@@ -243,47 +249,59 @@ destaque{
 .manual-btn{
     border: .2rem solid #fff;
     padding: .5rem;
-    border-radius:1rem;
+    width: 3rem;
+    height: 1rem;
+    border-radius:.5rem;
     cursor:pointer;
     transition: .05s;
 }
 
 .manual-btn:not(:last-child){
-    margin-right: 4rem;
+    margin-right: 2rem;
 }
 .manual-btn:hover{
     background-color: #fff;
 }
+
 #radio1:checked ~ .first{
-    margin-left: -10%;
+    margin-left: 0%;
 }
 #radio2:checked ~ .first{
-    margin-left: -25%;
+    margin-left: -33.8%;
 }
 #radio3:checked ~ .first{
-    margin-left: -60%;
+    margin-left: -67.1%;
 }
 #radio4:checked ~ .first{
-    margin-left: -60%;
+    margin-left: -100.8%;
 }
+#radio5:checked ~ .first{
+    margin-left: -134.4%;
+}
+#radio6:checked ~ .first{
+    margin-left: -168%;
+}
+
 .navigation-auto div{
-    border: .2rem solid blue;
+    border: .2rem solid #fff;
     padding: .5rem;
-    border-radius:1rem;
-    cursor: pointer;
-    transition: 1s;
+    width: 3rem;
+    height: 1rem;
+    border-radius:.5rem;
+    cursor:pointer;
+    transition: .05s;
 }
 
 .navigation-auto{
     position: absolute;
     width: 80rem;
-    margin-top: 36rem;
+    margin-top: 38rem;
     display: flex;
     justify-content: center;
 }
 
 .navigation-auto div:not(:last-child){
-    margin-right: 4rem;
+    margin-right: 2rem;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
@@ -298,10 +316,75 @@ destaque{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: #fff;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: #fff;
+}
+
 
 recomenda{
     grid-area: recomenda;
 }
+
+recomenda .ofertas {
+    border: .1rem solid black;
+    height: 35rem;
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+recomenda .ofertas .oferta {
+    display: grid;
+    width: 75rem;
+    height: 33rem;
+    grid-template-areas: 
+    'ofer1 ofer1-2 ofer2'
+    'ofer1 ofer1-2 ofer2-2';
+    grid-template-columns: 23rem 23rem;
+    grid-template-rows: 16.5rem;
+}
+recomenda .ofertas .oferta .ofer1{
+    grid-area: ofer1;
+    border: .1rem solid black;
+    height: 32.5rem;
+    width:22rem;
+}
+recomenda .ofertas .oferta .ofer1 .img{
+    height: 20rem;
+    width: 22rem;
+    background: url(../img/main/oferta1.jpg);
+    background-size: cover;
+}
+recomenda .ofertas .oferta .ofer1:nth-child(1){
+    grid-area: ofer1-2;
+}
+recomenda .ofertas .oferta .ofer1:nth-child(1) .img{
+    background: url(../img/main/oferta2.jpg);
+    background-size: cover;
+}
+recomenda .ofertas .oferta .ofer2{
+    grid-area: ofer2;
+    border: .1rem solid black;
+    height: 16rem;
+    width:25.2rem;
+}
+recomenda .ofertas .oferta .ofer2 .img{
+    height: 12rem;
+    width: 25rem;
+    background: url(../img/main/fnaf\ promo.jpg);
+    background-size: cover;
+}
+recomenda .ofertas .oferta .ofer2:nth-child(4){
+    grid-area:ofer2-2;
+}
+recomenda .ofertas .oferta .ofer2:nth-child(4) .img{
+    background: url(../img/main/sf6\ promo.jpg);
+    background-size: cover;
+}
+
+
 main-cont{
     grid-area: main-cont;
 }
