@@ -13,6 +13,9 @@
     @include mixins.mobile{
         display: flex;
         flex-direction: column;
+        h2{
+            color: red;
+        }
     }
 
     // div {
