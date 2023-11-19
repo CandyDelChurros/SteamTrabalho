@@ -1,5 +1,5 @@
 @import 'variaveis';
-
+@import 'mixins';
 
 
 
@@ -9,6 +9,11 @@
     grid-template-areas:
     'main1 main1'
     'main2 main3';
+
+    @include mixins.mobile{
+        display: flex;
+        flex-direction: column;
+    }
 
     // div {
     //     border: 1px solid white;
@@ -129,7 +134,7 @@
         flex-direction: column;
         margin-right: 3rem;
 
-        .main2-1{
+        .main2-1-fnaf{
             width: 100%;
             height: 8rem;
             background-color: $cor-blocos;
@@ -165,6 +170,47 @@
                 }
             }
         }
+
+        .main2-1-fnaf, .main2-1-st6, .main2-1-bg3{
+            width: 100%;
+            height: 8rem;
+            background-color: $cor-blocos;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            .jogo{
+                display: flex;
+                align-items: center;
+                img {
+                    width: 15rem;
+                    height: 5rem;
+                }
+                a{
+                    color: #fff;
+                    margin-left: 2rem;
+                }  
+            }
+
+            .preco{
+                width: 17rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                color: #fff;
+
+                a{
+                    color: $cor-texto2;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+
+        
 
         .main2-2{
             width: 100%;

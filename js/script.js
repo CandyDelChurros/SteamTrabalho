@@ -1,3 +1,6 @@
-  // Função para adicionar um item ao carrinho
-function adicionarAoCarrinho() {
+const removerItem = document.getElementsByClassName("a-remover")
+for (var i = 0; i < removerItem.length; i++) {
+  removerItem[i].addEventListener("click", function(event) {
+    console.log(event.target)
+  })
 }

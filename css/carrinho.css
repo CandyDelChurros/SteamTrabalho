@@ -102,7 +102,7 @@
   flex-direction: column;
   margin-right: 3rem;
 }
-.main .main2 .main2-1 {
+.main .main2 .main2-1-fnaf {
   width: 100%;
   height: 8rem;
   background-color: #16202D;
@@ -112,26 +112,59 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.main .main2 .main2-1 .jogo {
+.main .main2 .main2-1-fnaf .jogo {
   display: flex;
   align-items: center;
 }
-.main .main2 .main2-1 .jogo img {
+.main .main2 .main2-1-fnaf .jogo img {
   width: 15rem;
   height: 5rem;
 }
-.main .main2 .main2-1 .jogo a {
+.main .main2 .main2-1-fnaf .jogo a {
   color: #fff;
   margin-left: 2rem;
 }
-.main .main2 .main2-1 .preco {
+.main .main2 .main2-1-fnaf .preco {
   width: 17rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: #fff;
 }
-.main .main2 .main2-1 .preco a {
+.main .main2 .main2-1-fnaf .preco a {
+  color: #A4B0BD;
+  text-decoration: underline;
+}
+.main .main2 .main2-1-fnaf, .main .main2 .main2-1-st6, .main .main2 .main2-1-bg3 {
+  width: 100%;
+  height: 8rem;
+  background-color: #16202D;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.main .main2 .main2-1-fnaf .jogo, .main .main2 .main2-1-st6 .jogo, .main .main2 .main2-1-bg3 .jogo {
+  display: flex;
+  align-items: center;
+}
+.main .main2 .main2-1-fnaf .jogo img, .main .main2 .main2-1-st6 .jogo img, .main .main2 .main2-1-bg3 .jogo img {
+  width: 15rem;
+  height: 5rem;
+}
+.main .main2 .main2-1-fnaf .jogo a, .main .main2 .main2-1-st6 .jogo a, .main .main2 .main2-1-bg3 .jogo a {
+  color: #fff;
+  margin-left: 2rem;
+}
+.main .main2 .main2-1-fnaf .preco, .main .main2 .main2-1-st6 .preco, .main .main2 .main2-1-bg3 .preco {
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+.main .main2 .main2-1-fnaf .preco a, .main .main2 .main2-1-st6 .preco a, .main .main2 .main2-1-bg3 .preco a {
   color: #A4B0BD;
   text-decoration: underline;
 }
