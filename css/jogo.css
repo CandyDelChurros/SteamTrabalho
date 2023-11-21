@@ -326,4 +326,139 @@
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    width: 100rem;
+  }
+  header .logo {
+    position: relative;
+    right: 10rem;
+  }
+  header .abas, header button, header span {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .main1 {
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+  .main .main1 .menu {
+    height: 60rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 3rem;
+  }
+  .main .main1 .menu .carrinho {
+    display: none;
+  }
+  .main .main1 .menu .ul-menu {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .main1 .menu .ul-menu .li-menu {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+  }
+  .main .main1 .menu .ul-menu .buscar {
+    background-color: #5E839A;
+    margin-top: 2rem;
+    width: 95%;
+    margin-left: 0;
+    height: 100rem;
+    font-size: 3rem;
+  }
+  .main .main1 .menu .ul-menu i {
+    position: relative;
+    bottom: 5rem;
+    left: 42rem;
+    margin-right: 2rem;
+  }
+  .main .main1 h2 {
+    font-size: 5rem;
+  }
+  .main .main1 a, .main .main1 span {
+    font-size: 3rem;
+  }
+  .main .main1 h2, .main .main1 .todos-os-produtos {
+    margin-left: 2rem;
+  }
+  .main .main1 button {
+    display: none;
+  }
+  .main .main1 .trailer-e-descricao {
+    height: 180rem;
+    flex-direction: column-reverse;
+  }
+  .main .main1 .trailer-e-descricao li, .main .main1 .trailer-e-descricao p {
+    font-size: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+  }
+  .main .main1 .trailer-e-descricao .trailer, .main .main1 .trailer-e-descricao .descricao {
+    width: 100%;
+  }
+  .main .main1 .trailer-e-descricao .descricao img {
+    width: 100%;
+  }
+  .main .main1 .trailer-e-descricao .trailer iframe {
+    width: 100%;
+    height: 60rem;
+  }
+  .main .main1 .trailer-e-descricao .trailer img {
+    width: 19.5rem;
+  }
+  .main .main2 {
+    width: 100%;
+    padding: 5rem;
+    height: auto;
+    margin-right: 0;
+  }
+  .main .main2 h3, .main .main2 span, .main .main2 i, .main .main2 p, .main .main2 button {
+    font-size: 3rem;
+  }
+  .main .main2 .adicionar-jogo {
+    height: 20rem;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  .main .main2 .preco-e-botao {
+    width: 40rem;
+    height: 6rem;
+    bottom: 8rem;
+    left: 45rem;
+  }
+  .main .main2 .preco-e-botao button {
+    width: 20rem;
+    height: 5rem;
+  }
+  .main .main3 {
+    width: 100%;
+    padding: 3rem;
+  }
+  .main .main3 a, .main .main3 h5 {
+    font-size: 3rem;
+  }
+  .main .main3 .quantidade-jogador-fnaf a, .main .main3 .quantidade-jogador-st6 a, .main .main3 .quantidade-jogador-bg3 a {
+    width: 95%;
+  }
+  .main .main3 .quantidade-jogador-bg3 {
+    height: 25rem;
+  }
+  .main .main3 .quantidade-jogador-st6 {
+    height: 32rem;
+  }
+  .main .main3 .classificacao img {
+    width: 15rem;
+  }
 }/*# sourceMappingURL=jogo.css.map */
