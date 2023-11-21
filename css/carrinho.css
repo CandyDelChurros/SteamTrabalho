@@ -257,6 +257,13 @@
   header {
     width: 100rem;
   }
+  header .logo {
+    position: relative;
+    right: 10rem;
+  }
+  header .abas, header button, header span {
+    display: none;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -277,7 +284,6 @@
     display: none;
   }
   .main .main1 .menu .ul-menu {
-    border: 3px solid blue;
     width: 100%;
     height: 60rem;
     display: flex;
@@ -287,7 +293,6 @@
     width: 100%;
     padding: 2rem;
     display: flex;
-    border: 1px solid black;
   }
   .main .main1 .menu .ul-menu .buscar {
     background-color: #5E839A;
@@ -337,7 +342,8 @@
     display: none;
   }
   .main .main2 .main2-2 {
-    height: 40rem;
+    height: 45rem;
+    padding-top: 5rem;
   }
   .main .main2 .main2-2 .botoes-compra {
     height: 20rem;
@@ -350,7 +356,9 @@
     height: 6rem;
   }
   .main .main2 .main2-3 {
-    height: 25rem;
+    height: 35rem;
+    padding: 3rem;
+    padding-top: 5rem;
   }
   .main .main2 .main2-3 button {
     width: 45rem;
@@ -362,10 +370,20 @@
     align-items: flex-start;
     flex-direction: column-reverse;
   }
+  .main .main2 .main2-4 {
+    height: 30rem;
+  }
   .main .main3 {
-    height: 250rem;
+    margin-top: 5rem;
+    height: 300rem;
     width: 100%;
     align-items: center;
+  }
+  .main .main3 a {
+    width: 80%;
+  }
+  .main .main3 a img {
+    width: 100%;
   }
   .main .main3 img {
     width: 80%;
