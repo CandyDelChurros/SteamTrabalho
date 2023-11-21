@@ -47,5 +47,3 @@ function pfinal() {
     document.querySelector('.total-e-preco #totalCarrinho').textContent = total;
 }
 pfinal();
-
-
