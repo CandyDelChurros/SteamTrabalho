@@ -14,10 +14,9 @@ body {
     font-size: 1.6rem;
 }
 .container {
-    margin: 0 auto;
+    display: grid;
     width: 100vw;
     height: 100vh; 
-    display: grid;
     grid-template-rows: 13rem 1fr 13rem;
     grid-template-columns: 100vw;
     grid-template-areas: 
@@ -27,7 +26,6 @@ body {
 }
 header {
     grid-area: header;
-    width: 100vw;
     height: 13rem;
     display: flex;
     align-items: center;
@@ -100,7 +98,7 @@ main {
     "aside destaque"
     "aside recomenda"
     "aside main-cont";  
-    grid-template-columns: 30rem 83rem;
+    grid-template-columns: 30rem auto;
     grid-template-rows: 8.5rem 46rem 1fr 100rem;
     justify-content: center;
 }
