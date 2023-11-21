@@ -1,5 +1,4 @@
 @import 'variaveis';
-@import 'mixins';
 
 
 
@@ -9,14 +8,6 @@
     grid-template-areas:
     'main1 main1'
     'main2 main3';
-
-    @include mixins.mobile{
-        display: flex;
-        flex-direction: column;
-        h2{
-            color: red;
-        }
-    }
 
     // div {
     //     border: 1px solid white;
@@ -137,42 +128,6 @@
         flex-direction: column;
         margin-right: 3rem;
 
-        .main2-1-fnaf{
-            width: 100%;
-            height: 8rem;
-            background-color: $cor-blocos;
-            margin-bottom: 0.5rem;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 1rem;
-            padding-right: 1rem;
-
-            .jogo{
-                display: flex;
-                align-items: center;
-                img {
-                    width: 15rem;
-                    height: 5rem;
-                }
-                a{
-                    color: #fff;
-                    margin-left: 2rem;
-                }  
-            }
-
-            .preco{
-                width: 17rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                color: #fff;
-
-                a{
-                    color: $cor-texto2;
-                    text-decoration: underline;
-                }
-            }
-        }
 
         .main2-1-fnaf, .main2-1-st6, .main2-1-bg3{
             width: 100%;
@@ -354,5 +309,161 @@
         .jogo:hover{
             width: 31rem;
         }
+    }
+
+}
+
+@media (max-width: 450px){
+    header {
+        width: 100rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main1{
+            width: 100%;
+            margin-top: 0rem;
+            margin-bottom: 3rem;
+
+
+            .menu{
+                height: 60rem;
+                flex-direction: column;
+                justify-content: flex-start;
+                font-size: 3rem;
+
+                .carrinho{
+                    display: none;
+                }
+
+                .ul-menu{
+                    border: 3px solid blue;
+                    width: 100%;
+                    height: 60rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .li-menu{
+                        width: 100%;
+                        padding: 2rem;
+                        display: flex;
+                        border: 1px solid black;
+                    }
+
+                    .buscar{
+                        background-color: #5E839A;
+                        margin-top: 2rem;
+                        width: 95%;
+                        margin-left: 0;
+                        height: 100rem;
+                        font-size: 3rem;
+                    }
+
+                    i{
+                        position: relative;
+                        bottom: 5rem;
+                        left: 42rem;
+                        margin-right: 2rem;
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 5rem;
+            }
+            
+            a, span{
+                font-size: 3rem;
+            }
+
+            h2, .todos-os-produtos {
+                margin-left: 2rem;
+            }
+        }
+
+        .main2{
+            width: 100%;
+            margin-right: 0;
+
+            h2{
+                font-size: 5rem;
+            }
+
+            a, span, i, h3, button {
+                font-size: 3rem;
+            }
+
+            .main2-1-fnaf, .main2-1-st6, .main2-1-bg3{
+                height: 15rem;
+
+                .jogo{
+
+                    img{
+                        width: 30rem;
+                        height: 12rem;
+                    }
+
+                }
+
+                .preco{
+                    width: 20rem;
+                    flex-direction: column;
+
+
+                    i{
+                        display: none;
+                    }
+                }
+            }
+
+            .main2-2{
+                height: 40rem;
+
+                .botoes-compra{
+                    height: 20rem;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    flex-direction: column;
+
+                    button{
+                        width: 45rem;
+                        height: 6rem;
+                    }
+                }
+            }
+
+            .main2-3{
+                height: 25rem;
+
+                button{
+                    width: 45rem;
+                    height: 6rem;
+                }
+
+                .continuar-e-remover{
+                    height: 16rem;
+                    padding: 2rem;
+                    align-items: flex-start;
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+
+
+
+        .main3{
+            height: 250rem;
+            width: 100%;
+            align-items: center;
+
+        
+            img{
+                width: 80%;
+            }
+        }
+
+
     }
 }

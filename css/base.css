@@ -22,7 +22,6 @@ body {
     font-size: 1.6rem;
 }
 .container {
-    margin: 0 auto;
     width: 100vw;
     height: 100vh; 
     display: grid;
@@ -34,7 +33,6 @@ body {
 }
 
 header {
-    width: 100vw;
     height: 13rem;
     display: flex;
     border: .1rem solid black;
