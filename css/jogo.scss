@@ -1,0 +1,579 @@
+@import 'variaveis';
+@import 'mixins';
+
+
+.main {
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+    'main1 main1'
+    'main2 main3';
+
+    // div {
+    //     border: 1px solid white;
+    // }
+
+    h2, a, span, h3, button{
+        text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.6);
+    }
+
+    button{
+        font-size: 1.6rem;
+    }
+
+    .main1{
+        grid-area: main1;
+        width: 100rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+
+        .menu{
+            width: 100%;
+            height: 10rem;
+            margin-bottom: 3rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            // justify-content: flex-start;
+
+            .carrinho{
+                width: 100%;
+                height: 3rem;
+                display: flex;
+                justify-content: flex-end;
+
+                .carrinho-botao{
+                    height: 100%;
+                    padding: 0.5rem;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    background-color: $cor-botoes-verde;
+                    border-radius: 0.3rem;
+                    color: #fff;
+                    box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                }
+
+                .carrinho-botao:hover{
+                    background-color: $cor-botoes-verde-hover;
+                }
+            }
+
+            .ul-menu{
+                width: 100rem;
+                height: 4.5rem;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(90deg, #3178B3 0%, #1A387C 70%);
+
+                .li-menu{
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                .li-menu:hover{
+                    background: linear-gradient(90deg, #3178B3 0%, #1A387C 70%);
+                }
+
+                .buscar::placeholder{
+                    color: #171D25;
+                }
+
+                .buscar{
+                    margin-left: 3rem;
+                    width:16rem;
+                    height: 75%;
+                    border-radius: 0.3rem;
+                    padding-left: 2rem;
+                    background-color: #316282;
+                    color: #171D25;
+                }
+
+                i{
+                    color: #171D25;
+                    position: relative;
+                    right: 2.5rem;
+                }
+
+            }
+
+        }
+
+
+        .todos-os-produtos, span {
+            color: $cor-texto2;
+        }
+
+        .todos-os-produtos:hover{
+            color: #fff;
+        }
+
+        h2{
+            color: #fff;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .nome-jogo-e-central{
+            display: flex;
+            justify-content: space-between;
+            
+            button{
+                width: 20rem;
+                height: 4rem;
+                background-color: $cor-botoes-azul;
+                border-radius: 0.3rem;
+                color: $cor-tetxo-botao-azul;
+                box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.75);
+                transition: 0.5s;
+            }
+
+            button:hover{
+                background-color: $cor-botoes-azul-hover;
+                color: $cor-texto1
+            }
+        }
+
+        .trailer-e-descricao{
+            height: 45rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: $cor-blocos;
+
+            .trailer{
+
+                iframe{
+                    margin-bottom: 0.5rem;
+                }
+                img{
+                    width: 12.3rem;
+                }
+            }
+
+            .descricao{
+                width: 35rem;
+
+                img{
+                    width: 35rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                p{
+                    color: $cor-texto-descricao;
+                    margin-right: 1rem;
+                }
+
+                ul{
+                    margin-top: 2rem;
+                    font-size: 1.2rem;
+                    color: $cor-texto2;
+                    li{
+                        margin-bottom: 1rem;
+                    }
+                    a{
+                        color: $cor-texto3;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .main2{
+        grid-area: main2;
+        height: 115rem;
+        width: 67rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        color: $cor-texto1;
+
+        .adicionar-jogo{
+            height: 8rem;
+            background: linear-gradient(90deg, #32414F 0%, #566473 70%);
+            border-radius: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preco-e-botao{
+            width: 30rem;
+            height: 4rem;
+            padding-left: 2rem;
+            padding-right: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            border-radius: 0.3rem;
+            position: relative;
+            bottom:2rem;
+            left: 35rem;
+
+            button{
+                width: 15rem;
+                height: 3rem;
+                background-color: $cor-botoes-verde;
+                border-radius: 0.3rem;
+                color: $cor-texto1;
+                margin-left: 3rem;
+                box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.75);
+                transition: 0.5s;
+            }
+
+            button:hover{
+                background-color: $cor-botoes-verde-hover;
+            }
+
+        }
+
+        .sobre-o-jogo{
+            margin-top: 3rem;
+
+            h3{
+                color: $cor-texto1;
+                border-bottom: 1px solid #3178B3;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                color: $cor-texto2;
+                margin-bottom: 2rem;
+            }
+
+            img{
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .main3{
+        grid-area: main3;
+        width: 30rem;
+        height: 100rem;
+        display: flex;
+        flex-direction: column;
+
+        .quantidade-jogador-fnaf{
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+            margin-bottom: 3rem;
+
+            a{
+                width: 25rem;
+                padding: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #213748;
+                border-radius: 0.3rem;
+                color: $cor-texto3;
+
+                i{
+                    margin-right: 2rem;
+                    color: $cor-texto1;
+                }
+            }
+
+            a:hover{
+                background-color: #59A8D5;
+                color: $cor-texto1;
+            }
+
+        }
+
+        .quantidade-jogador-st6{
+            height: 22rem;
+            display: flex;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+            margin-bottom: 3rem;
+
+            a{
+                width: 28rem;
+                padding: 1rem;
+                padding-left: 2rem;
+                // padding-right: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #213748;
+                border-radius: 0.3rem;
+                color: $cor-texto3;
+
+                i{
+                    margin-right: 2rem;
+                    color: $cor-texto1;
+                }
+            }
+
+            a:hover{
+                background-color: #59A8D5;
+                color: $cor-texto1;
+            }
+
+        }
+
+        .quantidade-jogador-bg3{
+            height: 17rem;
+            display: flex;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+            margin-bottom: 3rem;
+
+            a{
+                width: 28rem;
+                padding: 1rem;
+                padding-left: 2rem;
+                // padding-right: 2rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #213748;
+                border-radius: 0.3rem;
+                color: $cor-texto3;
+
+                i{
+                    margin-right: 2rem;
+                    color: $cor-texto1;
+                }
+            }
+
+            a:hover{
+                background-color: #59A8D5;
+                color: $cor-texto1;
+            }
+
+        }
+
+        .classificacao{
+            background-color: $cor-blocos;
+            color: $cor-texto1;
+
+            .classificacao1{
+                padding: 2rem;
+                display: flex;
+
+                img{
+                    margin-right: 1rem;
+                }
+            }
+
+            .classificacao2{
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        width: 100rem;
+        .logo{
+            position: relative;
+            right: 10rem;
+        }
+
+        .abas, button, span {
+            display: none;
+        }
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main1{
+            width: 100%;
+            margin-top: 0rem;
+            margin-bottom: 3rem;
+
+
+            .menu{
+                height: 60rem;
+                flex-direction: column;
+                justify-content: flex-start;
+                font-size: 3rem;
+
+                .carrinho{
+                    display: none;
+                }
+
+                .ul-menu{
+                    width: 100%;
+                    height: 60rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .li-menu{
+                        width: 100%;
+                        padding: 2rem;
+                        display: flex;
+                    }
+
+                    .buscar{
+                        background-color: #5E839A;
+                        margin-top: 2rem;
+                        width: 95%;
+                        margin-left: 0;
+                        height: 100rem;
+                        font-size: 3rem;
+                    }
+
+                    i{
+                        position: relative;
+                        bottom: 5rem;
+                        left: 42rem;
+                        margin-right: 2rem;
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 5rem;
+            }
+            
+            a, span{
+                font-size: 3rem;
+            }
+
+            h2, .todos-os-produtos {
+                margin-left: 2rem;
+            }
+
+            button{
+                display: none;
+            }
+
+            .trailer-e-descricao{
+                height: 180rem;
+                flex-direction: column-reverse;
+
+                li, p{
+                    font-size: 3rem;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    margin-top: 3rem;
+                }
+
+                .trailer, .descricao{
+                    width: 100%;
+                }
+
+                .descricao{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .trailer{
+                    iframe{
+                        width: 100%;
+                        height: 60rem;
+                    }
+
+                    img{
+                        width: 19.5rem;
+                    }
+                }
+            }
+        }
+
+        .main2{
+            width: 100%;
+            padding: 5rem;
+            height: auto;
+            margin-right: 0;
+
+            h3, span, i, p, button{
+                font-size: 3rem;
+            }
+
+            .adicionar-jogo{
+                height: 20rem;
+                align-items: flex-start;
+                padding-top: 5rem;
+            }
+
+            .preco-e-botao{
+                width: 40rem;
+                height: 6rem;
+                bottom: 8rem;
+                left: 45rem;
+
+                button{
+                    width: 20rem;
+                    height: 5rem;
+                }
+            }
+
+        }
+
+        .main3{
+            width: 100%;
+            padding: 3rem;
+
+            a, h5{
+                font-size: 3rem;
+            }
+
+            .quantidade-jogador-fnaf, .quantidade-jogador-st6, .quantidade-jogador-bg3{
+                a{
+                    width: 95%;
+                }
+            }
+
+            .quantidade-jogador-bg3{
+                height: 25rem;
+            }
+
+            .quantidade-jogador-st6{
+                height: 32rem;
+            }
+
+            .classificacao{
+                img{
+                    width: 15rem;
+                }
+            }
+
+
+        }
+
+    }
+
+}
